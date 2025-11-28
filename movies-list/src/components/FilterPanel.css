@@ -1,0 +1,82 @@
+.filter-panel {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 0;
+  position: sticky;
+  top: 60px;
+  z-index: 999;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.filter-panel-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 8px;
+  background: #f5f5f5;
+  border-radius: 8px;
+  padding: 4px;
+  border: 1px solid #e0e0e0;
+}
+
+.filter-btn {
+  background: transparent;
+  border: none;
+  color: #666666;
+  padding: 10px 24px;
+  font-size: 0.9em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 6px;
+  position: relative;
+}
+
+.filter-btn:hover {
+  color: #1a1a1a;
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.filter-btn.active {
+  background: #1a1a1a;
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(26, 26, 26, 0.2);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .filter-panel {
+    top: 56px;
+  }
+  
+  .filter-panel-container {
+    padding: 12px 20px;
+  }
+  
+  .filter-btn {
+    padding: 8px 20px;
+    font-size: 0.85em;
+  }
+}
+
+@media (max-width: 480px) {
+  .filter-panel {
+    top: 52px;
+  }
+  
+  .filter-panel-container {
+    padding: 10px 16px;
+  }
+  
+  .filter-btn {
+    padding: 8px 16px;
+    font-size: 0.8em;
+  }
+}
